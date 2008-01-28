@@ -1,0 +1,11 @@
+<div id="getfake_data">
+<div class="code">
+  user:
+<% @fake_keys.each_with_index do |each_key, lnum|%>
+  <div class="element1">
+    <!-- <span class="lineno"><%= lnum+1 %></span>-->
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight"><%= each_key.downcase.split(" ").join("_")%>: <%= @fake_hash[each_key]%>  </span><br>
+  </div>
+<%end%>
+</div>
+</div>  

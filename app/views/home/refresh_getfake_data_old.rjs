@@ -1,0 +1,2 @@
+page.replace_html(:getfake_data, :partial => "getfake_data" )
+page.visual_effect(:highlight, :getfake_data )
