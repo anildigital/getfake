@@ -33,5 +33,3 @@ end
 
 after "deploy", "reload_nginx"
 after "deploy", "deploy:cleanup"
-
-end
