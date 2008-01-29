@@ -25,3 +25,13 @@ set :use_sudo, 'false'
 role :app, application
 role :web, application
 role :db,  application, :primary => true
+
+desc "Reload Nginx"
+task :reload_nginx do
+  sudo "/etc/init.d/nginx reload"
+end
+
+after "deploy", "reload_nginx"
+after "deploy", "deploy:cleanup"
+
+end
