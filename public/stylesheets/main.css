@@ -26,6 +26,11 @@ a {
 	color: #FF0077;
 	font-size: 40px;
 	font-weight: bold;
+	margin-left:15px;
+}
+
+#getfake_title a, a:visited{
+	color: #FF0077;
 }
 
 #container {
@@ -47,7 +52,6 @@ span.highlight:hover{
 
 #getfake_data {
 	font-family; helvetica, arial, sans-serif;
-	line-height:21px;
 	width: 500;
 }
 

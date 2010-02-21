@@ -1,8 +1,21 @@
 <div id="getfake_data">
-	<% @ordered_fake_keys.each_with_index do |each_key, lnum|%>
-	<div class="element1">
-		<!-- <span class="lineno"><%= lnum+1 %></span>-->
-		<span class="highlight"><%= each_key%> → <span class="fakevalue"><%= @fake_hash[each_key]%></span></span>&nbsp;&nbsp;<%= clippy(@fake_hash[each_key])%><br>
-	</div>
-	<%end%>
+	<table border="0">
+		<tr>
+			<% @ordered_fake_keys.each_with_index do |each_key, lnum|%>
+			<td>
+				<%= each_key%> 
+			</td>
+			<td width="30px;">
+				→ 
+			</td>
+			<td>
+				<span class="fakevalue"><%= @fake_hash[each_key]%></span>
+			</td>
+			<td>
+				<%= clippy(@fake_hash[each_key])%>
+			</td>
+		</tr>
+		<%end%>
+	</tr>
+</table>
 </div>
