@@ -7,7 +7,7 @@ module FakerHelper
     fake_hash["Prefix"] = Name.prefix
     fake_hash["Suffix"] = Name.suffix
     fake_hash["Phone number"] = PhoneNumber.phone_number
-    fake_hash["User name"] = Internet.user_name(fake_hash["First name"])
+    fake_hash["User name"] = Internet.user_name
     fake_hash["Email"]= Internet.email(fake_hash["User name"])
     fake_hash["Free email"] = Internet.free_email(fake_hash["User name"])
     fake_hash["Domain name"] = Internet.domain_name
