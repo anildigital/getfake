@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Get Fake</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="keywords" content="music, rahman, a.r.rahman, oscar" />
+	<link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="wrap">
+		<div id="content_left">
+			<div id="getfake_title">
+				get ƒake 
+			</div>
+			<div id="container">
+				<% if params[:display] == "yaml"%>
+				<%= erb(:getfake_yaml, :layout => false) %>
+				<% else %>
+				<%= erb(:getfake_data, :layout => false) %>
+				<% end%>
+			</div>
+			<div id="buttons">
+				<div class="ajaxlinks_left">
+					» <a href="/">Refresh</a>
+				</div>
+
+				<div class="ajaxlinks_right">
+					» <a href="?display=yaml">Get Yaml</a> <br />
+				</div>
+			</div>
+			<div id="footer">
+				(( copyright two thousand ten anil wadghule ))
+			</div>
+		</div>
+		<div  id="content_right">
+			<script type="text/javascript"><!--
+			google_ad_client = "pub-8750964154741955";
+			/* 300x250, created 2/21/10 for getfake.com */
+			google_ad_slot = "6436010745";
+			google_ad_width = 300;
+			google_ad_height = 250;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+		</div>
+	</div>
+</body>
+</html>
