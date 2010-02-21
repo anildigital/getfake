@@ -1,0 +1,13 @@
+environment: production
+chdir: /home/anil/public_html/getfake.digitalcodes.org
+address: 127.0.0.1
+user: anil
+group: anil
+port: 4571
+pid: /home/anil/public_html/getfake.digitalcodes.org/thin.pid
+rackup: /home/anil/public_html/getfake.digitalcodes.org/config.ru
+log: /home/anil/public_html/getfake.digitalcodes.org/thin.log
+max_conns: 1024
+timeout: 30
+max_persistent_conns: 512
+daemonize: true

@@ -1,7 +1,7 @@
 Get Fake
 =================================
 
-A sinatra app which helps to get Fake data. It is built on Ruby Faker gem.jj
+A sinatra app which helps to get Fake data. It uses Ruby Faker gem to generate Fake data.
 
 
 Introduction
