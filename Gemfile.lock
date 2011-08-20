@@ -14,4 +14,7 @@ PLATFORMS
 
 DEPENDENCIES
   faker
+  i18n
+  rack
   sinatra
+  tilt
