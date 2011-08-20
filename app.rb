@@ -2,7 +2,7 @@ require 'rubygems'
 require "bundler/setup"
 require 'sinatra'
 require 'faker'
-require 'lib/faker_helper'
+require './lib/faker_helper'
 
 include Faker
 include FakerHelper
