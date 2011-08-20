@@ -1,3 +1,4 @@
+source :rubygems
 gem 'sinatra'
 gem 'faker'
 gem 'rack'
